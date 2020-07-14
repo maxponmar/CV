@@ -1,2 +1,2 @@
 # CV
-My CV page
+My personal portfolio
