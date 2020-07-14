@@ -560,6 +560,7 @@ img {
         }
         .home_img {
             right: 10%;
+            width: 500px;
         }
     }
 }
