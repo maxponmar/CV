@@ -1,2 +1,2 @@
 # CV
-My personal portfolio
+Simple homepage
