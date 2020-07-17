@@ -27,3 +27,9 @@ function linkAction() {
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+// ===== CHANGE NAVIGATION STYLE ON SCROLL =====
+
+window.addEventListener('scroll', event => {
+    let header = document.querySelector('.l-header');
+    (window.scrollY >= 40) ? header.classList.add('scroll') : header.classList.remove('scroll');
+});
