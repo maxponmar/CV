@@ -10,8 +10,9 @@
 /* Colors */
 
 :root {
-    --first-color: #f69e7b;
-    --second-color: #383e56;
+    --first-color: #00adb5;
+    --second-color: #393e46;
+    --white-color: #eeeeee;
 }
 
 /* Fonts */
@@ -135,7 +136,7 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: white;
+    background-color:var(--white-color);
     box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
 }
 
@@ -166,7 +167,7 @@ img {
 
 .nav_link {
     position: relative;
-    color: white;
+    color: var(--white-color);
 }
 
 .nav_link:hover{
@@ -255,7 +256,7 @@ img {
 .button {
     display: inline-block;
     background-color: var(--first-color);
-    color: white;
+    color: var(--white-color);
     padding: .75rem 1.5rem;    
     font-weight: var(--font-semi);
     border-radius: .5rem;
@@ -457,7 +458,7 @@ img {
 /* ===== FOOTER ===== */
 .footer{
     background-color: var(--second-color);
-    color: white;
+    color: var(--white-color);
     text-align: center;
     font-weight: var(--font-semi);
     padding: 2rem 0;
@@ -474,7 +475,7 @@ img {
 
 .footer_social-icon {
     font-size: 1.5rem;
-    color: white;
+    color: var(--white-color);
     margin: 0 var(--mb-2);
 }
 
@@ -578,7 +579,3 @@ img {
 }
 
 
-/* ===== SCROLLING ===== */
-.scroll {
-    background-color: #e8e4e1;
-}
