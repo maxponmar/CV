@@ -63,14 +63,14 @@ const sr = ScrollReveal({
 
 // => HOME
 sr.reveal('.home_title', {origin:'top'})
-sr.reveal('.home_img', {origin: 'bottom', delay: 400})
-sr.reveal('.home_social', {origin: 'bottom', delay: 500, interval: 200})
-sr.reveal('.button', {origin: 'left', delay: 300})
+sr.reveal('.home_img', {origin: 'bottom', delay: 100})
+sr.reveal('.home_social', {origin: 'bottom', delay: 150, interval: 200})
+sr.reveal('.button', {origin: 'left', delay: 200})
 
 // => ABOUT
 sr.reveal('.about_img', {})
-sr.reveal('.about_subtitle', {delay: 200})
-sr.reveal('.about_text', {origin:'left', delay: 400})
+sr.reveal('.about_subtitle', {delay: 100})
+sr.reveal('.about_text', {origin:'left', delay: 150})
 
 // => SKILLS 
 sr.reveal('.skills_subtitle', {})
@@ -80,7 +80,7 @@ sr.reveal('.skills_text', {origin:'left', delay: 200})
 
 // => WORK
 sr.reveal('.work_table', {origin: 'left'})
-sr.reveal('.work_img', {origin: 'bottom'})
+sr.reveal('.work_img', {origin: 'bottom', delay: 100})
 
 // => CONTACT
 sr.reveal('.contact_container', {origin: 'bottom'})
