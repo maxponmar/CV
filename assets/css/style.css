@@ -64,7 +64,8 @@ body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    color: var(--second-color);    
+    color: var(--second-color); 
+    line-height: 1.6;
 }
 
 h1, h2, p {
@@ -578,4 +579,6 @@ img {
     }
 }
 
-
+html.sr .widget {
+    visibility: hidden;
+}

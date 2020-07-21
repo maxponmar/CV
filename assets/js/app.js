@@ -62,15 +62,15 @@ const sr = ScrollReveal({
 })
 
 // => HOME
-sr.reveal('.home_title', {})
-sr.reveal('.home_scroll', {delay: 200})
-sr.reveal('.home_img', {origin: 'right', delay: 400})
-sr.reveal('.home_social', {delay: 500, interval: 200})
+sr.reveal('.home_title', {origin:'top'})
+sr.reveal('.home_img', {origin: 'bottom', delay: 400})
+sr.reveal('.home_social', {origin: 'bottom', delay: 500, interval: 200})
+sr.reveal('.button', {origin: 'left', delay: 800})
 
 // => ABOUT
 sr.reveal('.about_img', {})
 sr.reveal('.about_subtitle', {delay: 200})
-sr.reveal('.about_text', {origin:'right', delay: 400})
+sr.reveal('.about_text', {origin:'left', delay: 400})
 
 // => SKILLS 
 sr.reveal('.skills_subtitle', {})
@@ -79,7 +79,8 @@ sr.reveal('.skills_img', {origin:'bottom', delay: 150})
 sr.reveal('.skills_text', {origin:'left', delay: 200})
 
 // => WORK
-sr.reveal('.work_img', {origin: 'right', delay: 100})
+sr.reveal('.work_table', {origin: 'left'})
+sr.reveal('.work_img', {origin: 'bottom'})
 
 // => CONTACT
 sr.reveal('.contact_container', {origin: 'bottom'})
