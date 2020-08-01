@@ -1,4 +1,4 @@
-@font-face { font-family: Poppins; src: url('../fonts/Poppins/Poppins-Regular.ttf'); } 
+@font-face { font-family: Poppins; src: url('../fonts/Poppins/Poppins-Regular.ttf'); }
 
 /* ===== VARIABLES =====*/
 
@@ -64,7 +64,7 @@ body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    color: var(--second-color); 
+    color: var(--second-color);
     line-height: 1.6;
 }
 
@@ -172,7 +172,7 @@ img {
 }
 
 .nav_link:hover{
-    position: relative;    
+    position: relative;
 }
 
 .nav_link:hover::after {
@@ -258,7 +258,7 @@ img {
     display: inline-block;
     background-color: var(--first-color);
     color: var(--white-color);
-    padding: .75rem 1.5rem;    
+    padding: .75rem 1.5rem;
     font-weight: var(--font-semi);
     border-radius: .5rem;
 }
@@ -278,7 +278,7 @@ img {
 }
 
 .about_img {
-    justify-self: center;    
+    justify-self: center;
 }
 
 .about_img img {
@@ -299,7 +299,9 @@ img {
 
 .skills_text {
     margin-bottom: var(--mb-4);
+    margin-top: var(--mb-1);
     text-align: center;
+    font-size: 25px;
 }
 
 .skills_data {
@@ -412,7 +414,7 @@ img {
 
 /* ===== WORK ===== */
 .work {
-    text-align: center;    
+    text-align: center;
 }
 
 .work_container {
@@ -508,7 +510,7 @@ img {
         margin-bottom: 0;
     }
     .nav_toggle {
-        display: none;        
+        display: none;
     }
     .nav_link {
         color: var(--second-color);
@@ -534,14 +536,14 @@ img {
         width: 357px;
         bottom: 15%;
     }
-    
+
     .about_container{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
         text-align: initial;
     }
     .skills_container{
-        align-items: center;        
+        align-items: center;
         grid-template-columns: repeat(4,1fr);
         align-items: center;
         margin: auto;
@@ -551,7 +553,7 @@ img {
         width: 400px;
     }
     .skills_img {
-        width: 600px;        
+        width: 600px;
         margin: auto;
     }
 
