@@ -136,8 +136,8 @@ img {
   grid-template-columns: 100%;
   grid-column-gap: 2rem;
   width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+  margin-left: var(--mb-1);
+  margin-right: var(--mb-1);
 }
 
 .l-header {
@@ -308,7 +308,7 @@ img {
 
 .skills_text {
   margin-bottom: var(--mb-4);
-  margin-top: var(--mb-1);
+  margin-top: var(--mb-1);/
   text-align: center;
   font-size: 25px;
 }
@@ -482,7 +482,7 @@ img {
     padding-bottom: 3rem;
   }
   .section-title {
-    margin-bottom: var(--mb-6);
+    margin-bottom: var(--mb-4);
   }
   .section-title::after {
     width: 80px;
@@ -595,7 +595,7 @@ title{
     margin: auto;
 }
 
-.container .card{
+.container .card_contact{
     width: 330px;
     height: 440px;
     border-radius: 8px;
@@ -607,35 +607,136 @@ title{
     background-color: #e4e4e4;
 }
 
-.container .card:hover{
+.container .card_contact:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container .card img{
+.container .card_contact img{
     width: 230px;
     height: 230px;
     margin: 10px auto;
 }
 
-.container .card h4{
+.container .card_contact h4{
     font-weight: 600;
 }
 
-.container .card p{
+.container .card_contact p{
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
 }
 
-.container .card a {
+.container .card_contact a {
     font-weight: 500;
     text-decoration: none;
     /* color: #3498db; */
 }
 
-.card_social-icon {
-  font-size: 2rem;  
-  margin: 0 var(--mb-2);
+.container_projects {
+  width: 100%;
+  margin: 50px auto;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 23%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;    
+  color: #fff;
+}
+
+#card-bookstore {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), 
+    url('https://raw.githubusercontent.com/maxponmar/BookStore-API/master/Resources/AdminView.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+#card-numericalmethods{
+  color: #000;
+  background: linear-gradient(to right, #00adb5, #6a6a6a);  
+  font-size: 12px;
+}
+
+#card-newsapp {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), 
+    url('https://raw.githubusercontent.com/maxponmar/NoticiasApp/master/images/home.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+#card-angularshop{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), 
+    url('https://raw.githubusercontent.com/maxponmar/portafolio-angular/master/preview/preview.png?raw=true');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, blue, var(--first-color));
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.card-body .btn-live {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, red, var(--first-color));
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
