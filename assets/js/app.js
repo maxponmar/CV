@@ -78,9 +78,13 @@ sr.reveal('.skills_container', {delay: 100})
 sr.reveal('.skills_img', {origin:'bottom', delay: 120})
 sr.reveal('.skills_text', {origin:'left', delay: 140})
 
-// => WORK
-sr.reveal('.work_table', {origin: 'left'})
-sr.reveal('.work_img', {origin: 'bottom', delay: 100})
+// => PROJECTS
+sr.reveal('.card-1', {origin: 'up', delay: 80})
+sr.reveal('.card-2', {origin: 'bottom', delay: 100})
+sr.reveal('.card-3', {origin: 'up', delay: 120})
+sr.reveal('.card-4', {origin: 'bottom', delay: 140})
+sr.reveal('.btn', {origin: 'left', delay: 160})
+sr.reveal('.btn-live', {origin: 'right', delay: 160})
 
 // => CONTACT
 sr.reveal('.contact_container', {origin: 'bottom'})
