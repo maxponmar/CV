@@ -1,389 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maximiliano's Home Page</title>
-  <link rel="icon" href="assets/favicon.ico" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS  -->
+  <link rel="stylesheet" href="assets/css/style.css">  
+  <!-- Box Icons -->
+  <link rel="stylesheet" href="assets/css/boxicons.min.css">
+  <!-- Dev Icons -->
   <link rel="stylesheet" href="assets/devicon.min.css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Maximiliano Ponce</title>
 </head>
-
 <body>
   <header class="l-header">
     <nav class="nav bd-grid">
-      <div>
-        <a href="#" class="nav_logo">Maximiliano Ponce Marquez</a>
-      </div>
-      <div class="nav_menu" id="nav-menu">
-        <ul class="nav_list">
-          <li class="nav_item">
-            <a href="#home" class="nav_link active">Home</a>
-          </li>
-          <li class="nav_item">
-            <a href="#about" class="nav_link">About</a>
-          </li>
-          <li class="nav_item">
-            <a href="#skills" class="nav_link">Skills</a>
-          </li>
-          <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
-          <li class="nav_item">
-            <a href="#contact" class="nav_link">Contact</a>
-          </li>
-        </ul>
-      </div>
+      
       <div class="nav_toggle" id="nav-toggle">
         <i class="bx bx-menu"></i>
       </div>
+      
+      <div>
+        <a href="#" class="nav_logo">Maximiliano</a>
+      </div>
+
+      <div class="nav_menu" id="nav-menu">
+        <div class="nav_close" id="nav-close">
+          <i class="bx bx-x"></i>
+        </div>
+
+        <ul class="nav_list">
+          <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+          <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+          <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+          <li class="nav_item"><a href="#services" class="nav_link">Services</a></li>
+          <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+          <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>          
+        </ul>
+      </div>
+      
     </nav>
   </header>
-
   <main class="l-main">
-    <!-- === Home === -->
-    <section class="home bd-grid" id="home">
-      <div class="home_data">
-        <h1 class="home_title">
-          My <br />name is <br />
-          <span class="home_title-color">Maximiliano</span>
-        </h1>
-        <a href="#contact" class="button">Contact</a>
-      </div>
-
-      <div class="home_social">
-        <a href="#contact" class="home_social-icon"><i class="bx bx-mail-send"></i></a>
-        <a href="https://github.com/maxponmar" class="home_social-icon"><i class="bx bxl-github"></i></a>
-      </div>
-
-      <div class="home_img">
-        <img id="home-img" src="assets/images/mypic.png" alt="" />
+    <!-- ===== HOME ===== -->
+    <section class="home" id="home">
+      <div class="home_container bd-grid">
+        <div class="home_data">
+          <div class="home_img">
+            <img src="assets/images/mypic.png" alt="Maximiliano Ponce Marquez">
+          </div>
+          <div class="home_title">Maximiliano Ponce Marquez</div>
+          <span class="home_profession">Mechatronics Engineer</span>
+  
+          <div class="home_social">
+            <a href="#" class="home_social-link"><i class="bx bxl-github"></i></a>
+            <a href="#" class="home_social-link"><i class='bx bxs-envelope' ></i></a>
+          </div>
+  
+          <a download="" href="#" class="button home_button">Download Resume</a>
+        </div>
       </div>
     </section>
-
     <!-- ===== ABOUT ===== -->
     <section class="about section" id="about">
-      <h2 class="section-title">About</h2>
-      <div class="about_container bd-grid">
-        <div class="about_img">
-          <img src="assets/images/mypic2.jpg" />
+      <span class="section-subtitle">My intro</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="about_container bd-grid ">
+        <div class="about_data">
+          <p class="about_description">I am a mechatronics engineer student from Tecnológico Nacional de México - Instituto Tecnológico de Nogales. I love programming, reading and videogames. </p>
+          <img src="assets/images/mypic2.jpg" alt="Maximiliano Ponce Marquez" class="about_img">
         </div>
         <div>
-          <h2 class="about_subtitle">Maximiliano Ponce Marquez</h2>
-          <p class="about_text">
-            I am a mechatronics engineer student from
-            <a href="https://www.tecnm.mx/">Tecnológico Nacional de México</a>
-            -
-            <a href="http://www.itnogales.edu.mx/">Instituto Tecnológico de Nogales</a>. I love programming, reading and
-            videogames.
-          </p>
-        </div>
+          <div class="about_information">
+            <h3 class="about_information-title">Information</h3>
+            <div class="about_information-data">
+              <i class="bx bx-user about_information-icon"></i>
+              <span>Maximiliano Ponce Marquez</span>
+            </div>
+            <div class="about_information-data">
+              <i class='bx bxs-envelope about_information-icon' ></i>
+              <span>maxponce.marquez@gmail.com</span>
+            </div>          
+          </div>
+          <!-- <div class="about_information">
+            <h3 class="about_information-title">Experience and support</h3>
+            <div class="about_information-data">
+              <i class="bx bx-medal about_information-icon"></i>
+              <div>
+                <span class="about_information-subtitle">3 Years Job</span>
+                <span class="about_information-subtitle-small">Experience</span>
+              </div>
+            </div>
+            <div class="about_information-data">
+              <i class="bx bx-briefcase about_information-icon"></i>
+              <div>
+                <span class="about_information-subtitle">10+ Projects</span>
+                <span class="about_information-subtitle-small">Completed</span>
+              </div>
+            </div>
+            <div class="about_information-data">
+              <i class="bx bx-support about_information-icon"></i>
+              <div>
+                <span class="about_information-subtitle">Support</span>
+                <span class="about_information-subtitle-small">Online 24/7</span>
+              </div>
+            </div>
+          </div> -->
+        </div>        
       </div>
     </section>
-
     <!-- ===== SKILLS ===== -->
     <section class="skills section" id="skills">
-      <h2 class="section-title">Skills</h2>
-
-      <!-- <div class="skills_desc">
-          <h2 class="skills_subtitle">Professional Skills</h2>
-        </div> -->
-
-      <div class="skills_container bd-grid">
-        <div>
-          <h3>Web Development</h3>
-
+      <span class="section-subtitle">Why Choose Me</span>
+      <h2 class="section-title">My Expertise Area</h2>
+      <div class="skills_content">
+        <div class="skills_container bd-grid">
+          <h3 class="skills_subtitle">Frontend</h3>
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-html5-plain colored skills_icon"></i>
-              <span class="skills_name">HTML5</span>
-            </div>
-            <div class="skills_percentage">95%</div>
-            <div class="skills_bar skills_html"></div>
+            <i class="devicon-html5-plain colored skills_icon"></i>      
+            <span class="skills_name">HTML</span>
+            <i class="devicon-css3-plain colored skills_icon"></i>
+            <span class="skills_name">CSS</span>
+            <span class="skills_number">95%</span>
+            <span class="skills_bar skills_html"></span>
           </div>
-
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-css3-plain colored skills_icon"></i>
-              <span class="skills_name">CSS3</span>
-            </div>
-            <div class="skills_percentage">85%</div>
-            <div class="skills_bar skills_css"></div>
+            <i class="devicon-javascript-plain colored skills_icon"></i>
+            <span class="skills_name">JavaScript</span>
+            <span class="skills_number">90%</span>
+            <span class="skills_bar skills_javascript"></span>
           </div>
-
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-javascript-plain colored skills_icon"></i>
-              <span class="skills_name">JavaScript</span>
-            </div>
-            <div class="skills_percentage">90%</div>
-            <div class="skills_bar skills_javascript"></div>
+            <i class="devicon-angularjs-plain colored skills_icon"></i>
+            <span class="skills_name">Angular</span>
+            <span class="skills_number">90%</span>
+            <span class="skills_bar skills_angular"></span>
           </div>
-
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-nodejs-plain colored skills_icon"></i>
-              <span class="skills_name">NodeJS</span>
-            </div>
-            <div class="skills_percentage">80%</div>
-            <div class="skills_bar skills_nodejs"></div>
+            <i class="devicon-react-original colored skills_icon"></i>
+            <span class="skills_name">ReactJS</span>
+            <span class="skills_number">85%</span>
+            <span class="skills_bar skills_react"></span>
           </div>
-
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-php-plain colored skills_icon"></i>
-              <span class="skills_name">PHP</span>
-            </div>
-            <div class="skills_percentage">80%</div>
-            <div class="skills_bar skills_php"></div>
+            <i class="devicon-vuejs-plain colored skills_icon"></i>
+            <span class="skills_name">VueJS</span>
+            <span class="skills_number">80%</span>
+            <span class="skills_bar skills_vue"></span>
           </div>
-
         </div>
-        <div>
-          <h3>Programming Languages</h3>
-
+      </div>
+      <div class="skills_content">
+        <div class="skills_container bd-grid">
+          <h3 class="skills_subtitle">Backend</h3>
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-csharp-plain colored skills_icon"></i>
-              <span class="skills_name">C#</span>
-            </div>
-            <div class="skills_percentage">95%</div>
-            <div class="skills_bar skills_cs"></div>
-          </div>
-
+            <i class="devicon-csharp-plain colored skills_icon"></i>
+            <span class="skills_name">C#</span>                        
+            <span class="skills_number">95%</span>
+            <span class="skills_bar skills_csharp"></span>
+          </div> 
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-python-plain colored skills_icon"></i>
-              <span class="skills_name">Python</span>
-            </div>
-            <div class="skills_percentage">95%</div>
-            <div class="skills_bar skills_python"></div>
+            <i class="devicon-python-plain colored skills_icon"></i>
+            <span class="skills_name">Python</span>            
+            <span class="skills_number">95%</span>
+            <span class="skills_bar skills_python"></span>
           </div>
-
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-java-plain colored skills_icon"></i>
-              <span class="skills_name">Java</span>
-            </div>
-            <div class="skills_percentage">95%</div>
-            <div class="skills_bar skills_java"></div>
-          </div>
-
+            <i class="devicon-java-plain colored skills_icon"></i>
+            <span class="skills_name">Java</span>
+            <span class="skills_number">90%</span>
+            <span class="skills_bar skills_java"></span>
+          </div>                   
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-c-plain colored skills_icon"></i>
-              <span class="skills_name">C</span>
-            </div>
-            <div class="skills_percentage">90%</div>
-            <div class="skills_bar skills_c"></div>
+            <i class="devicon-php-plain colored skills_icon"></i>
+            <span class="skills_name">PHP</span>
+            <span class="skills_number">85%</span>
+            <span class="skills_bar skills_php"></span>
           </div>
-
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-cplusplus-plain colored skills_icon"></i>
-              <span class="skills_name">C++</span>
-            </div>
-            <div class="skills_percentage">90%</div>
-            <div class="skills_bar skills_cpp"></div>
+            <i class="devicon-nodejs-plain colored skills_icon"></i>
+            <span class="skills_name">NodeJS</span>
+            <span class="skills_number">90%</span>
+            <span class="skills_bar skills_nodejs"></span>
           </div>
-
+          <div class="skills_data">
+            <i class="bx bxl-microsoft skills_icon"></i>
+            <span class="skills_name">ASP.NET Core</span>
+            <span class="skills_number">95%</span>
+            <span class="skills_bar skills_dotnet"></span>
+          </div>
+          <div class="skills_data">
+            <i class="devicon-django-plain colored skills_icon"></i>
+            <span class="skills_name">Django</span>
+            <span class="skills_number">85%</span>
+            <span class="skills_bar skills_django"></span>
+          </div>
+          <div class="skills_data">
+            <i class="devicon-laravel-plain-wordmark colored"></i>
+            <span class="skills_name">Laravel</span>
+            <span class="skills_number">40%</span>
+            <span class="skills_bar skills_laravel"></span>
+          </div>
         </div>
-        <div>
-          <h3>Frameworks</h3>
-
-          <div class="skills_data">
-            <div class="skills_names">
-              <i class="bx bxl-microsoft skills_icon"></i>
-              <span class="skills_name">ASP.NET Core</span>
-            </div>
-            <div class="skills_percentage">90%</div>
-            <div class="skills_bar skills_asp"></div>
+      </div>
+      <div class="skills_content">
+        <div class="skills_container bd-grid">
+          <h3 class="skills_subtitle">Databases</h3>
+          <div class="skills_data">            
+            <i class="bx bxl-microsoft skills_icon"></i>
+            <span class="skills_name">SQL Server</span>
+            <span class="skills_number">95%</span>
+            <span class="skills_bar skills_sqlserver"></span>
           </div>
-
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-django-plain colored skills_icon"></i>
-              <span class="skills_name">Django</span>
-            </div>
-            <div class="skills_percentage">85%</div>
-            <div class="skills_bar skills_django"></div>
+            <i class="devicon-mysql-plain colored skills_icon"></i>
+            <span class="skills_name">MySql / MariaDB</span>
+            <span class="skills_number">90%</span>
+            <span class="skills_bar skills_mariadb"></span>
           </div>
-
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-angularjs-plain colored skills_icon"></i>
-              <span class="skills_name">Angular</span>
-            </div>
-            <div class="skills_percentage">90%</div>
-            <div class="skills_bar skills_angular"></div>
+            <i class="devicon-postgresql-plain colored skills_icon"></i>
+            <span class="skills_name">PostgreSQL</span>
+            <span class="skills_number">90%</span>
+            <span class="skills_bar skills_postgresql"></span>
           </div>
-
           <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-react-original colored skills_icon"></i>
-              <span class="skills_name">React</span>
-            </div>
-            <div class="skills_percentage">85%</div>
-            <div class="skills_bar skills_react"></div>
-          </div>
-
-          <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-vuejs-plain colored skills_icon"></i>
-              <span class="skills_name">Vue</span>
-            </div>
-            <div class="skills_percentage">80%</div>
-            <div class="skills_bar skills_vue"></div>
+            <i class="devicon-mongodb-plain colored skills_icon"></i>
+            <span class="skills_name">MongoDB</span>
+            <span class="skills_number">90%</span>
+            <span class="skills_bar skills_mongodb"></span>
           </div>          
-
         </div>
-        <div>
-          <h3>Databases</h3>
-
-          <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-mysql-plain colored skills_icon"></i>
-              <span class="skills_name">MySQL</span>
-            </div>
-            <div class="skills_percentage">95%</div>
-            <div class="skills_bar skills_mysql"></div>
-          </div>
-
-          <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-mongodb-plain colored skills_icon"></i>
-              <span class="skills_name">MongoDB</span>
-            </div>
-            <div class="skills_percentage">90%</div>
-            <div class="skills_bar skills_mongodb"></div>
-          </div>
-
-          <div class="skills_data">
-            <div class="skills_names">
-              <i class="devicon-postgresql-plain colored skills_icon"></i>
-              <span class="skills_name">PostgreSQL</span>
-            </div>
-            <div class="skills_percentage">85%</div>
-            <div class="skills_bar skills_postgresql"></div>
-          </div>
-
-          <div class="skills_data">
-            <div class="skills_names">
-              <i class="bx bxl-microsoft skills_icon"></i>
-              <span class="skills_name">SQL Server</span>
-            </div>
-            <div class="skills_percentage">95%</div>
-            <div class="skills_bar skills_sqlserver"></div>
-          </div>
-
-        </div>
-      </div>
-      <!-- <div class="skills_img">
-          <a href="#"><img src="assets/images/work1.jpg"/></a>
-        </div>
-        <p class="skills_text">
-          <i class="bx bxs-up-arrow-alt"></i>Click here to see my projects<i
-            class="bx bxs-up-arrow-alt"
-          ></i>
-        </p> -->
-    </section>
-
-    <!-- ===== PROJECTS ===== -->
-    <section class="projects section" id="projects">
-      <h2 class="section-title">Projects</h2>
-
-      <div class="projects_container bd-grid">
-        <div class="container_projects">
-          <div class="row">
-            <div class="card card-1">
-              <div class="card-header" id="card-bookstore">
-                <h1>Book Store API</h1>
-              </div>
-              <div class="card-body">
-                <p>
-                  API created with ASP.NET Core and SQL Server with help of Swagger and NLog for documentation.
-                </p>
-                <a href="https://github.com/maxponmar/BookStore-API" class="btn">See project</a>
-              </div>
-            </div>
-            <div class="card card-2">
-              <div class="card-header" id="card-numericalmethods">
-                <h1>NumericalMethods</h1>
-              </div>
-              <div class="card-body">
-                <p>
-                  Library is based on the book "Numerical Method for Engineers - Steven C. Chapra, Raymond P. Cannale"
-                </p>
-                <a href="https://github.com/maxponmar/NumericalMethodsCsharp" class="btn">See project</a>
-              </div>
-            </div>
-            <div class="card card-3">
-              <div class="card-header" id="card-newsapp">
-                <h1>News App</h1>
-              </div>
-              <div class="card-body">
-                <p>                  
-                  CRUD application created in Ionic framework that consumes an API developed in ASP.NET Core and SQL Server
-                </p>
-                <a href="https://github.com/maxponmar/NoticiasApp" class="btn">See project</a>
-              </div>
-            </div>
-            <div class="card card-4">
-              <div class="card-header" id="card-angularshop">
-                <h1>Angular Shop</h1>
-              </div>
-              <div class="card-body">
-                <p>
-                  Web page that gets information from Firebase and display it dynamically
-                </p>
-                <a href="https://maxponmar.github.io/portafolio-angular/#/home" class="btn-live">See live project</a>
-              </div>
-            </div>
-          </div>
-          
-          
-        </div>
-      </div>
-
       </div>
     </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section class="contact section" id="contact">
-      <h1 class="section-title">Contact</h1>
-
-      <div class="contact_container bd-grid">
-        <div class="container">
-          <div class="card_contact">
-            <img src="assets/images/mypic.png" />
-            <h4>Maximiliano Ponce Marquez</h4>
-            <p>
-              maxponce.marquez@gmail.com
-            </p>
-            <a href="mailto:maxponce.marquez@gmail.com?subject=Contact Maximiliano&body=Hello, Maximiliano"
-              class="button">
-              <i class='bx bx-mail-send'></i>
-              Send Email
-            </a>
+    <!-- ===== EDUCATION ===== -->
+    <section class="education section" id="education">
+      <span class="section-subtitle">Qualification</span>
+      <h2 class="section-title">My Education</h2>
+      <div class="education_container bd-grid">
+        <div class="education_content">
+          <div>
+            <h3 class="education_year">2016 - Now</h3>
+            <span class="education_university">Instituto Tecnológico de Nogales</span>
           </div>
+          <div class="education_time">
+            <span class="education_rounder"></span>
+            <span class="education_line"></span>
+          </div>
+          <div>
+            <h3 class="education_race">Mechatronics Engineering</h3>
+            <!-- <span class="education_specialty"></span> -->
+          </div>          
+        </div>
+        <div class="education_content">
+          <div>
+            <h3 class="education_year">2013 - 2016</h3>
+            <span class="education_university">CETis #128</span>
+          </div>
+          <div class="education_time">
+            <span class="education_rounder"></span>
+            <span class="education_line"></span>
+          </div>
+          <div>
+            <h3 class="education_race">Industrial Technician</h3>
+            <!-- <span class="education_specialty"></span> -->
+          </div>          
         </div>
       </div>
     </section>
   </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <p class="footer_title">Maximiliano Ponce Marquez</p>
-    <div class="footer_social">
-      <!-- <a href="#" class="footer_social-icon"><i class='bx bxl-facebook-square' ></i></a>
-            <a href="#" class="footer_social-icon"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#" class="footer_social-icon"><i class='bx bxl-twitter' ></i></a>  -->
-      <a href="https://github.com/maxponmar" class="footer_social-icon"><i class="bx bxl-github"></i></a>
-    </div>
-    <p>&#169; 2020 Copyright all rights reserved</p>
-  </footer>
+  <!-- JavaScript -->
   <script src="assets/js/app.js"></script>
 </body>
-
 </html>
