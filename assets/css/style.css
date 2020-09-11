@@ -362,15 +362,23 @@ img{
 .skills_subtitle{
   font-size: var(--h3-font-size);
   color: var(--primary-color-dark);
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
 }
 
 .skills_data{
-  position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 0 var(--mb-1);
-  margin-bottom: var(--mb-4);
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: 0.5rem 1rem;
+  margin-bottom: var(--mb-2);
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.skills_data-empty{
+  display: none;
 }
 
 .skills_name{
@@ -383,9 +391,11 @@ img{
 
 .skills_bar{
   position: absolute;
-  bottom: -0.75rem;
-  height: 0.25rem;
+  left: 0;
+  bottom: 0;
   background-color: var(--primary-color);
+  height: 0.25rem;
+  border-radius: 0.5rem;  
 }
 
 .skills_html {
@@ -722,6 +732,13 @@ img{
     padding-left: 2rem;
   }
 
+  .skills_content{
+    margin-bottom: var(--mb-2);
+  }
+
+  .skills_data-empty{
+    display: block;
+  }
   .education_time{
     padding: 0 2rem;
   }
