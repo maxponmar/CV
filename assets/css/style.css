@@ -134,6 +134,7 @@ img{
   color: var(--primary-color-darken);
   text-align: center;
   font-weight: var(--font-bold);
+  margin-top: 1rem;
   margin-bottom: 0.25rem;
 }
 
@@ -232,6 +233,7 @@ img{
   align-items: center;
   height: max-content;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .home_img{
@@ -255,7 +257,7 @@ img{
 }
 
 .home_social{
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .home_social-link{
@@ -274,7 +276,7 @@ img{
 }
 
 .home_button{
-  width: 100%;
+  width: 100%;  
 }
 
 /* <== Buttons ==> */
@@ -648,24 +650,116 @@ img{
 
 /* <== FOOTER ==> */
 .footer {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-darken);
   color: var(--lighten-color);
   text-align: center;
-  font-weight: var(--font-semi-bold);
-  padding: 2rem 0;
 }
 
-.footer_title {
-  font-size: 2rem;
-  margin-bottom: var(--mb-4);
+.footer_title{
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
 }
 
-.footer_social {
-  margin-bottom: var(--mb-4);
+.footer_description{
+  margin-bottom: var(--mb-2);
 }
 
-.footer_social-icon {
-  font-size: 1.5rem;
+.footer_social{
+  margin-bottom: 1rem;
+}
+
+.footer_link{
+  display: inline-flex;
+  background-color: var(--primary-color);
   color: var(--lighten-color);
-  margin: 0 var(--mb-2);
+  font-size: 1.1rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin: 0 var(--mb-1);
+  transition: 0.3s;
+}
+
+.footer_link:hover{
+  background-color: var(--lighten-color);
+  color: var(--primary-color);
+}
+
+.footer_copy{
+  font-size: var(--smaller-font-size);
+  color: var(--light-color);
+}
+
+/* <=== MEDIA QUERIES ===> */
+@media screen and (min-width: 768px){
+  .home_button{
+    width: initial;    
+  }
+
+  .nav_menu{
+    width: var(--nav-width);
+  }
+
+  .about_container,
+  .skills_container,
+  .services_container,
+  .projects_container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about_data{
+    text-align: initial;
+  }
+
+  .about_description{
+    margin-bottom: var(--mb-5);
+  }
+
+  .about_img{
+    width: 270px;
+  }
+
+  .about_information{
+    padding-left: 2rem;
+  }
+
+  .education_time{
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  body{
+    margin: 0;
+    padding-left: var(--nav-width);
+  }
+
+  .l-header{
+    width: 0;
+  }
+
+  .nav_toggle, .nav_close, .nav_logo{
+    display: none;
+  }
+
+  .nav_menu{
+    left: 0;
+  }
+
+  .home_container{
+    height: 100vh;
+  }
+
+  .section{
+    padding: 3rem 0 2rem;
+  }
+
+  .footer{
+    background: none;    
+  }
+
+  .footer_container{
+    background-color: var(--primary-color-darken);
+    padding: 3rem 0;
+    border-radius: 1rem;
+  }
 }
