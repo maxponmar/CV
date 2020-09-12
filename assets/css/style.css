@@ -159,10 +159,9 @@ img{
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.l-main{
-  width: 100%;
-  margin: var(--mb-5) auto;
-}
+/* .l-main{
+  align-self: center;
+} */
 
 /* <== Navbar ==>*/
 .nav{
@@ -775,12 +774,16 @@ img{
     padding: 3rem 0 2rem;
   }
 
+  .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .footer{
-    background: none;
+    background: none;    
   }
 
   .footer_container{
-    background-color: var(--primary-color-darken);
+    background-color: var(--primary-color-darken);    
     padding: 3rem 0;
     border-radius: 1rem;
   }
