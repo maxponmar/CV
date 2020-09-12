@@ -1,6 +1,6 @@
 /* Poppins font */
 @font-face {
-  font-family: Poppins;  
+  font-family: Poppins;
   src: url("../fonts/Poppins/Poppins-Medium.ttf");
   font-weight: 500;
   font-style: medium;
@@ -9,17 +9,17 @@
 }
 
 @font-face {
-  font-family: Poppins;  
+  font-family: Poppins;
   src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
   font-weight: 600;
-  font-style: semibold;    
+  font-style: semibold;
 }
 
 @font-face {
-  font-family: Poppins;  
+  font-family: Poppins;
   src: url("../fonts/Poppins/Poppins-Bold.ttf");
   font-weight: 700;
-  font-style: bold;  
+  font-style: bold;
 }
 
 /* CSS Variables */
@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    /* Font */    
+    /* Font */
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -157,6 +157,11 @@ img{
   z-index: var(--z-fixed);
   background-color: var(--lighten-color);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.l-main{
+  width: 100%;
+  margin: var(--mb-5) auto;
 }
 
 /* <== Navbar ==>*/
@@ -276,7 +281,7 @@ img{
 }
 
 .home_button{
-  width: 100%;  
+  width: 100%;
 }
 
 /* <== Buttons ==> */
@@ -296,7 +301,7 @@ img{
 
 .button_light{
   background-color: var(--lighten-color);
-  color: var(--primary-color);  
+  color: var(--primary-color);
 }
 
 .button_light:hover{
@@ -386,7 +391,7 @@ img{
 }
 
 .skills_icon {
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
 }
 
 .skills_bar{
@@ -395,7 +400,7 @@ img{
   bottom: 0;
   background-color: var(--primary-color);
   height: 0.25rem;
-  border-radius: 0.5rem;  
+  border-radius: 0.5rem;
 }
 
 .skills_html {
@@ -546,18 +551,18 @@ img{
   color: var(--primary-color);
 }
 
-.services_content:hover .services_title{  
+.services_content:hover .services_title{
   color: var(--lighten-color);
 }
 
-.services_content:hover .services_description{  
+.services_content:hover .services_description{
   color: var(--lighten-color);
 }
 
 /* <== PROJECTS ==> */
 .projects_container{
   justify-items: center;
-  row-gap: 2rem;  
+  row-gap: 2rem;
 }
 
 .projects_img{
@@ -702,7 +707,7 @@ img{
 /* <=== MEDIA QUERIES ===> */
 @media screen and (min-width: 768px){
   .home_button{
-    width: initial;    
+    width: initial;
   }
 
   .nav_menu{
@@ -771,7 +776,7 @@ img{
   }
 
   .footer{
-    background: none;    
+    background: none;
   }
 
   .footer_container{
