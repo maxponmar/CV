@@ -119,6 +119,7 @@ img{
 /* <== Classes ==> */
 .section{
   padding: 4rem 0 2rem;
+  margin: auto var(--mb-4);
 }
 
 .section-title{
